@@ -1,11 +1,14 @@
 {
-  "name": "js_modules",
-  "version": "1.0.0",
-  "description": "webpack2",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Chehin Juan",
-  "license": "ISC"
+    "name": "js_modules",
+    "version": "1.0.0",
+    "description": "webpack2",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "Chehin Juan",
+    "license": "ISC",
+    "dependencies": {
+        "webpack": "^2.2.0-rc.0"
+    }
 }
