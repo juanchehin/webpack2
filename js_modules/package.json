@@ -9,9 +9,18 @@
     "author": "Chehin Juan",
     "license": "ISC",
     "dependencies": {
+        "@babel/core": "^7.15.5",
+        "@babel/preset-env": "^7.15.4",
         "babel-core": "^6.26.3",
         "babel-loader": "^8.2.2",
         "babel-preset-env": "^1.7.0",
-        "webpack": "^2.2.0-rc.0"
+        "css-loader": "^6.2.0",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "style-loader": "^3.2.1",
+        "webpack": "^5.52.0"
+    },
+    "devDependencies": {
+        "mini-css-extract-plugin": "^2.2.2",
+        "webpack-cli": "^4.8.0"
     }
 }
