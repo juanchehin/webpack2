@@ -25,6 +25,15 @@ const config = {
                     },
                 }),
                 test: /\.css$/
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/,
+                use: [{
+                        loader: 'url-loader',
+                        options: { limit: 40000 } // Maximo tamaño de la imagen de 40000 Bytes
+                    },
+                    'image-webpack-loader'
+                ]
             }
         ]
     },
@@ -36,10 +45,7 @@ const config = {
             test: /\.css$/i,
             use: [MiniCssExtractPlugin.loader, "css-loader"],
         }, ],
-    },
-    // plugins: [
-    //     new ExtractTextPlugin('style.css')
-    // ]
+    }
 };
 
 module.exports = config;

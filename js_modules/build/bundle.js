@@ -1,1 +1,0 @@
-(()=>{"use strict";const t=document.createElement("img");t.src="http://lorempixel.com/400/400/",document.body.appendChild(t),total=10+5,console.log(total)})();
