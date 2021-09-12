@@ -1,8 +1,9 @@
-import big from '../assets/big.jpg';
 import small from '../assets/small.jpg';
-import '../styles/image_viewer.css'; // Como no es un archivo .js , debe especificarse la extencion (en este caso .cNss)
+import '../styles/image_viewer.css';
 
-const img = document.createElement('img');
-img.src = "http://lorempixel.com/400/400/";
+export default () => {
+    const image = document.createElement('img');
+    image.src = small;
 
-document.body.appendChild(img);
+    document.body.appendChild(image);
+};
